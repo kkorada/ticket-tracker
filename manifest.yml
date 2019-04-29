@@ -1,0 +1,8 @@
+applications:
+  - name: tickettracker
+    buildpack: https://github.com/cloudfoundry/buildpack-nodejs.git
+    memory: 512M
+    instances: 1
+    host: kal-tickettracker
+    disk_quota: 512M
+    command: node index.js
